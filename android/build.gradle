@@ -8,7 +8,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.3'
+        classpath 'com.android.tools.build:gradle:7.0.4'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31"
     }
 }
@@ -25,9 +25,6 @@ android {
     }
     lintOptions {
         abortOnError false
-    }
-    kotlinOptions {
-        jvmTarget = '1.8'
     }
 }
 
@@ -46,5 +43,4 @@ repositories {
 dependencies {
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation "com.facebook.react:react-native:+"
-    implementation 'com.github.Polidea:MultiPlatformBleAdapter:b0272c0fae040cc90f790481c54e8f2d45304339'
 }

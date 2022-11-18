@@ -1,0 +1,10 @@
+plugins {
+    id 'me.champeau.includegit' version '0.1.5'
+}
+
+gitRepositories {
+     include('repo') {
+        uri = 'https://github.com/dotintent/MultiPlatformBleAdapter.git'
+        branch = 'master'
+    }
+}
